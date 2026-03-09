@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Or "ES6" if preferred, ES2020 supports more modern features
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true, // Important for importing JSON files if needed
+    "sourceMap": true, // Generates source maps for easier debugging
+    // "baseUrl": "./src", // Optional: if you want to set a base URL for non-relative imports
+    // "paths": { // Optional: if you want path aliases
+    //   "@config/*": ["config/*"],
+    //   "@controllers/*": ["controllers/*"],
+    //   etc.
+    // }
+  },
+  "include": ["src/**/*"], // Which files to include
+  "exclude": ["node_modules", "**/*.spec.ts"] // Which files to exclude
+}
